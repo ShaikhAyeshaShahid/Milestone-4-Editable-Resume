@@ -22,6 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = (document.getElementById("email") as HTMLInputElement).value;
         const github = (document.getElementById("github") as HTMLInputElement).value;
         const linkedin = (document.getElementById("linkedin") as HTMLInputElement).value;
+        const skillsedit = (document.getElementById("skill1") as HTMLInputElement).value;
+        const proficiency1 = (document.getElementById("proficiency1") as HTMLInputElement).value;
+
+        const eduDegree1 = (document.getElementById("eduDegree1") as HTMLInputElement).value;
+        const eduSchool1 = (document.getElementById("eduSchool1") as HTMLInputElement).value;
+        const eduStartDate1 = (document.getElementById("eduStartDate1") as HTMLInputElement).value;
+        const eduEndDate1 = (document.getElementById("eduEndDate1") as HTMLInputElement).value;
+
+        const expTitle1 = (document.getElementById("expTitle1") as HTMLInputElement).value;
+        const expCompany1 = (document.getElementById("expCompany1") as HTMLInputElement).value;
+        const expStartDate1 = (document.getElementById("expStartDate1") as HTMLInputElement).value;
+        const expEndDate1 = (document.getElementById("expEndDate1") as HTMLInputElement).value;
+        const expDescription1 = (document.getElementById("expDescription1") as HTMLInputElement).value;
+
 
         // Handle Profile Image
         let profileImageUrl = '';
@@ -66,12 +80,79 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p class="editable">${location} | ${phone} | ${email}</p>
                     <p class="editable"><a href="${github}" target="_blank">GitHub</a> | <a href="${linkedin}" target="_blank">LinkedIn</a></p>
                 </div>
-                <h3 class="editable">Skills</h3>
-                ${skillsHtml}
-                <h3 class="editable">Experience</h3>
-                ${experiencesHtml}
-                <h3 class="editable">Education</h3>
-                ${educationHtml}
+           <h3 class="editable" style="
+    color: var(--primary-color); 
+    font-size: 2rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    margin-bottom: 1rem; 
+    border-bottom: 2px solid var(--accent-color); 
+    padding-bottom: 5px;
+">Skills</h3>
+
+<h3 class="editable" style="
+    color: var(--primary-color); 
+    font-size: 1.5rem; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    margin-bottom: 1rem; 
+    border-bottom: 2px solid var(--accent-color); 
+    padding-bottom: 5px;
+">${skillsHtml}</h3>
+
+<h3 class="editable" style="
+    color: var(--primary-color); 
+    font-size: 2rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    margin-bottom: 1rem; 
+    border-bottom: 2px solid var(--accent-color); 
+    padding-bottom: 5px;
+">Experience</h3>
+
+<h3 class="editable" style="
+    color: var(--primary-color); 
+    font-size: 1.5rem; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    margin-bottom: 1rem; 
+    border-bottom: 2px solid var(--accent-color); 
+    padding-bottom: 5px;
+">${experiencesHtml}</h3>
+
+
+
+<h3 class="editable" style="
+    color: var(--primary-color); 
+    font-size: 2rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    margin-bottom: 1rem; 
+    border-bottom: 2px solid var(--accent-color); 
+    padding-bottom: 5px;
+">Education</h3>
+
+<h3 class="editable" style="
+    color: var(--primary-color); 
+    font-size: 2rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    margin-bottom: 1rem; 
+    border-bottom: 2px solid var(--accent-color); 
+    padding-bottom: 5px;
+">${educationHtml}</h3>
+
+<h3 class="editable" style="
+    color: var(--primary-color); 
+    font-size: 1.5rem; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    margin-bottom: 1rem; 
+    border-bottom: 2px solid var(--accent-color); 
+    padding-bottom: 5px;
+">${eduDegree1} ${eduSchool1}</h3>
+
+
             `;
             resumeContainer.style.display = "block";
         }
